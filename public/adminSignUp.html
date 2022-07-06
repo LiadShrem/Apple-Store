@@ -1,0 +1,33 @@
+<body>
+
+	<div id="body">
+		<div class="content">
+			<div>
+				<div>
+					<h1>Sign Up</h1>
+					
+					<h4>Want to add more admins? Just fill in the form below.</h4>
+					<form action="/addmanager">
+						<label for="name"> <span class="text"> Name:</span>
+							<input type="text" name="name" id="name" required>
+						</label>
+						<label for="id"> <span> ID:</span>
+							<input type="text" name="id" id="ID" required>
+						</label>
+						<label for="email"> <span> E-mail:</span>
+							<input type="text" name="email" id="email" required>
+						</label>
+						<label for="password"> <span> Password:</span>
+							<input  type="password"name="password" id="password" required></input>
+						</label>
+						<label for="user"> <span> User:</span>
+							<input  type="radio" name="user" id="user" value="admin" required> admin</input>
+							<input  type="radio" name="user" id="user" value="customer" required> customer</input>
+						</label>
+						<input type="submit" value="" onclick="saveManager()">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+    </body>

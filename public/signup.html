@@ -1,0 +1,34 @@
+<body>
+
+	<div id="body">
+		<div class="content">
+			<div>
+				<div>
+					<h1>Sign Up</h1>
+					
+					<h4>Want to order the products? Just fill in the form below.</h4>
+					<form action="/addCustomers">
+						<label for="name"> <span class="text">Your Name:</span>
+							<input type="text" name="name" id="name" required>
+						</label>
+						<label for="id"> <span>Your ID:</span>
+							<input type="text" name="id" id="ID" required>
+						</label>
+						<label for="email"> <span>Your E-mail:</span>
+							<input type="text" name="email" id="email" required>
+						</label>
+						<label for="password"> <span>Your password:</span>
+							<input  type="password"name="password" id="password" required></input>
+						</label>
+						
+						<input type="submit" value="" onclick="saveClient()">
+					</form>
+				</div>
+				<div class="signup">
+					<a href="#" onclick="fetchPage('login.html')">
+						already have an account?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    </body>

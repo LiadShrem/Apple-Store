@@ -1,0 +1,54 @@
+<body onload="showIwatch()">
+    <div id="body">
+        <div class="content">
+            <div>
+                <div>
+
+                    <h1>iWatch : </h1>
+
+                    <div id="mywatch"></div>
+
+                    
+                 
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h1>Products</h1>
+            <ul class="navigation">
+                <li class="first">
+                    <a href="#" onclick="fetchPage('iphone.html'),showIphone(),showIphone()">iPhone</a>
+                </li>
+                <li>
+                    <a href="#" onclick="fetchPage('mac.html'),showImac()">iMac</a>
+                </li>
+                <li>
+                    <a href="#" class="active" onclick="fetchPage('watch1.html'),showIwatch()">iWatch</a>
+                </li>
+            </ul>
+
+        </div>
+
+
+    </div>
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <div id="popup">
+                <h3><span>&#10003;</span></h3>
+                <h3 id=title> Item successfully addedd</h3>
+            </div>
+
+
+
+            <button type="submit" class="btn" onclick="fetchPage('order.html')">View Shopping Bag</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Back To Shop</button>
+        </form>
+
+    </div>
+    </div>
+    </div>
+
+</body>

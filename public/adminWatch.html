@@ -1,0 +1,57 @@
+<body onload="showIwatch()">
+    <div id="body">
+        <div class="content">
+            <div>
+                <div>
+
+                    <h1>iWatch : <button class="newProduct" id="open-button_product" onclick="openFormAddNewIwatch()">Add New iWatch </button></h1>
+
+					<div class="form-popup" id="myFormNewIwatch">
+						<form action="/NewIwatch" class="form-container">
+							<div id="popup">
+								<h3 id=title> New Product</h3>
+							</div>
+							name<input type="text" name="name" required>
+							color<input type="text" name="color" required> 
+							price<input type="text" name="price" required> 
+							image<input type="text" name="img" > 
+
+							<button type="submit" class="btn" onclick="openFormAddNewIwatch()">Add</button>
+							<button type="button" class="btn cancel" onclick="closeFormAddNewIwatch()">Cancel</button>
+						</form>
+
+					</div> 
+
+                    <div id="mywatch"></div>
+
+                    
+                 
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h1>Products</h1>
+            <ul class="navigation">
+                <li class="first">
+                    <a href="#" onclick="fetchPage('adminIphone.html'),showAdminIphone()">iPhone</a>
+                </li>
+                <li>
+                    <a href="#" onclick="fetchPage('adminMac.html'),showAdminImac()">iMac</a>
+                </li>
+                <li>
+                    <a href="#" class="active" onclick="fetchPage('adminWatch.html'),showAdminIwatch()">iWatch</a>
+                </li>
+            </ul>
+
+        </div>
+
+
+    </div>
+
+    </div>
+    </div>
+
+</body>
